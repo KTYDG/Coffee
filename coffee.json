@@ -202,5 +202,14 @@
       ],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Agua_Panela_con_Queso_Fresco_at_La_Puerta_Falsa_%285617496209%29.jpg/640px-Agua_Panela_con_Queso_Fresco_at_La_Puerta_Falsa_%285617496209%29.jpg",
       "id": 20
+    },
+    {
+      "title": "STANKIN Coffee",
+      "description": "For students who want to stay awake for weeks",
+      "ingredients": [
+        "5oz Espresso"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Coffe_cup_wood.jpg",
+      "id": 2
     }
   ]

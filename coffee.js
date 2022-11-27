@@ -27,7 +27,6 @@ const compArr = (a, b) => {
 };
 
 /** Функция для получения выбранных checkbox и нахождение подходящего рецепта кофе */
-/* istanbul ignore file */
 function my() {
     let checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
     let output = [];
@@ -49,10 +48,7 @@ function check(output) {
         .then((json) => {
             for (const item of json) {
                 let coffee = Object.assign(new Coffee(), item);
-                console.log(coffee.ingredients);
                 if (compArr(coffee.ingredients, output)) {
-                    console.log(coffee);
-                    console.log(coffee.title);
                     document.getElementById("look").src = coffee.image;
                     document.getElementById("header").textContent = coffee.title;
                     document.getElementById("text").textContent = coffee.description;
@@ -65,7 +61,42 @@ function check(output) {
             }
         });
 }
-exports.check = check;
-exports.comp = compArr;
 
+function UniqueArr(value, index, self) {
+    return self.indexOf(value) === index;
+}
+
+function SetVariants() {
+    fetch('coffee.json')
+        .then((response) => response.json())
+        .then((json) => {
+            const variantsSet = new Set();
+            for (const item of json) {
+                let coffee = Object.assign(new Coffee(), item);
+                for (const ingredient of coffee.ingredients) {
+                    variantsSet.add(ingredient);
+                }
+            }
+
+            for (const [key, value] of variantsSet.entries()) {
+                const label = document.createElement("label");
+                label.innerHTML = `${value}`;
+                const input = document.createElement("input");
+                input.setAttribute('type', 'checkbox');
+                input.setAttribute('onclick', 'my()');
+                input.setAttribute('id', key);
+                input.setAttribute('value', value);
+
+                const item = document.createElement("div");
+                item.className = 'grid-item';
+                item.appendChild(label);
+                item.appendChild(input);
+
+                document.getElementById("grid").appendChild(item);
+            }
+        });
+}
+
+SetVariants();
 my();
+
