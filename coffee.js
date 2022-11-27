@@ -61,11 +61,7 @@ function check(output) {
             }
         });
 }
-
-function UniqueArr(value, index, self) {
-    return self.indexOf(value) === index;
-}
-
+/** Функция для создания кнопок с ингредиентами из JSON */
 function SetVariants() {
     fetch('coffee.json')
         .then((response) => response.json())
