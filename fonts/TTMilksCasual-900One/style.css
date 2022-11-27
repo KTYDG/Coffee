@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'TT Milks 900One';
+    src: local('TT Milks 900One'), local('TT-Milks-900One'),
+        url('TTMilksCasual-900One.woff2') format('woff2'),
+        url('TTMilksCasual-900One.woff') format('woff'),
+        url('TTMilksCasual-900One.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }

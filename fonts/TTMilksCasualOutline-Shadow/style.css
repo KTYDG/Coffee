@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'TT Milks Shadow';
+    src: local('TT Milks Shadow'), local('TT-Milks-Shadow'),
+        url('TTMilksCasualOutline-Shadow.woff2') format('woff2'),
+        url('TTMilksCasualOutline-Shadow.woff') format('woff'),
+        url('TTMilksCasualOutline-Shadow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

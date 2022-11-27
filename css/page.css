@@ -1,0 +1,100 @@
+.page {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    justify-content: center;
+}
+.subpage {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    width: 50%;
+    height: fit-content;
+    float: left;
+    display: block;
+    text-align: center;
+}
+.info p {
+    margin-top: 0;
+    margin-bottom: 40px;
+    display: block;
+    font-size: 56px;
+    color: rgb(255, 145, 240);
+    font-family: "TT Milks Demi Bold";
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+            1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+}
+.joy__text p {
+    color: rgb(255, 145, 240);
+}
+
+.max__text p {
+    color: rgb(215, 74, 102);
+}
+
+.tim__text p {
+    color: rgb(141, 100, 216);
+}
+
+.pictures {
+    width: 50%;
+    height: fit-content;
+    float: left;
+
+    display: flex;
+    justify-content: center;
+
+}
+.table {
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    display: flex;
+    justify-content: center;
+}
+.row span {
+    padding: 20px;
+}
+.row img {
+    border-radius: 80px;
+    width: auto;
+    height: 280px;
+}
+
+@media (max-width: 1160px) {
+    .row img {
+        border-radius: 45px;
+        width: auto;
+        height: 220px;
+    }
+}
+@media (max-width: 992px) {
+    .subpage {
+        flex-direction: column;
+    }
+    .row img {
+        height: 300px;
+    }
+    .pictures {
+        width: 100%;
+    }
+    .info {
+        float: none;
+        width: 100%;
+    }
+    .info p {
+        padding: auto 20px;
+    }
+}
+@media (max-width: 700px) {
+    .row {
+        align-items: center;
+        flex-direction: column;
+    }
+}

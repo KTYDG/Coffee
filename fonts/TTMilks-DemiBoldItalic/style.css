@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'TT Milks Demi Bold Italic';
+    src: local('TT Milks Demi Bold Italic'), local('TT-Milks-Demi-Bold-Italic'),
+        url('TTMilks-DemiBoldItalic.woff2') format('woff2'),
+        url('TTMilks-DemiBoldItalic.woff') format('woff'),
+        url('TTMilks-DemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}

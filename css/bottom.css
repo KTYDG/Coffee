@@ -1,0 +1,55 @@
+.bottom {
+    width: 100%;
+    height: 200px;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+
+    background: linear-gradient(0deg,
+        #0F0F0F 0%,
+        rgba(40, 40, 40, 0) 100%);
+    background-blend-mode: saturation;
+}
+
+.bottom div {
+    display: block;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 1200px;
+    height: 100px;
+
+    padding-top: 35px;
+}
+
+.ct {
+    font-family: 'Meows';
+    font-size: 66px;
+    text-decoration: none;
+
+    color: #FFFFFF;
+    padding-left: 10px;
+}
+
+#contacts {
+    margin: 0px;
+    padding-left: 30px;
+}
+#contacts li {
+    padding-bottom: 5px;
+    width: fit-content;
+}
+#contacts li:hover {
+    cursor: url(../img/cursor_pointer.png), auto;
+}
+#contacts a {
+    font-family: 'TT Milks Shadow';
+    font-size: 25px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+#contacts a:hover {
+    color: rgb(255, 145, 240);
+    cursor: url(../img/cursor_pointer.png), auto;
+}
